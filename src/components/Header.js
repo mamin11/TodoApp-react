@@ -7,7 +7,7 @@ export default class Header extends Component {
             <div>
             <header className="App-header">
                 <h4>
-                    MY TODO APP
+                    REACT APP
                 </h4>
                 <ul>
                     <li className="link-style">

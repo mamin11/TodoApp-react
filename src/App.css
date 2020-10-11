@@ -101,6 +101,72 @@
   margin: 3vmin 0;
 }
 
+.switch-hidden{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 200px;
+	height: 100px;
+  background: #da5555;	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+/* label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+} */
+
+.checked + label {
+	background: #bada55;
+}
+
+.unchecked {
+  background: #da5555;
+  height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.checked:checked + label:after {
+	left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 130px;
+}
+
+
+#about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  height: auto;
+  margin: 8vh 0;
+}
+#about h1 {
+  margin: 0 15px;
+}
+
+.paragraph {
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
