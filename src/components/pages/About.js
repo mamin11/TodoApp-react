@@ -46,7 +46,7 @@ class About extends React.Component {
                     if(item.id === 2) {item.status = false}
                     if(item.id === 3) {item.status = false}
                 })})
-                console.log(''+this.state.items[0].status + '\n' + this.state.items[1].status + '\n' + this.state.items[2].status);
+                //console.log(''+this.state.items[0].status + '\n' + this.state.items[1].status + '\n' + this.state.items[2].status);
             }
             if((this.state.items[0].status === true) && (this.state.items[2].status === true) && (this.state.items[1].status === false) ) {
                 this.setState({items: this.state.items.map( item => {
@@ -54,7 +54,7 @@ class About extends React.Component {
                     if(item.id === 2) {item.status = false}
                     if(item.id === 3) {item.status = true}
                 })})
-                console.log(''+this.state.items[0].status + '\n' + this.state.items[1].status + '\n' + this.state.items[2].status);
+                //console.log(''+this.state.items[0].status + '\n' + this.state.items[1].status + '\n' + this.state.items[2].status);
             }
             if((this.state.items[0].status === false) && (this.state.items[1].status === true) && (this.state.items[2].status === true) ) {
                 this.setState({items: this.state.items.map( item => {
@@ -62,7 +62,7 @@ class About extends React.Component {
                     if(item.id === 2) {item.status = true}
                     if(item.id === 3) {item.status = false}
                 })})
-                console.log(''+this.state.items[0].status + '\n' + this.state.items[1].status + '\n' + this.state.items[2].status);
+                //console.log(''+this.state.items[0].status + '\n' + this.state.items[1].status + '\n' + this.state.items[2].status);
             }
         }
 
